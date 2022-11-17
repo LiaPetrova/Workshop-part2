@@ -11,7 +11,7 @@ import { UserService } from 'src/app/core/user.service';
 })
 export class ThemesDetailPageComponent implements OnInit {
 
-  theme!: ITheme;
+  theme!: ITheme<IPost>;
   canSubscribe: boolean = false;
   isLoggedIn: boolean = this.userService.isLogged;
 
